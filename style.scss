@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+no_display {
+    display: none;
+}
+
+.caroussel {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    margin-bottom: 20px;
+    padding: 23px;
+    :hover{
+        transform: scale(1.2);
+        
+    }
+}
+
+.navbar_list {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    position: fixed;
+    width: 100%
+}
+.hero_banner_img{
+    width: 100%;
+    max-height: 600px;
+    
+}
+input[type=text] {
+    width: 25%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+ }
+
+ /* When the input field gets focus,
+      change its width to 100% */
+ input[type=text]:focus {
+   width: 75%;
+ }
+
+ input[type=text]#searchbar {
+    color: white;
+ }
